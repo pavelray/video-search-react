@@ -7,7 +7,7 @@ export class VideoDetails extends Component {
         const videoSrc = `https://www.youtube.com/embed/${video.id.videoId}`;
         return (
         <>
-            <div className="ui embeded">
+            <div className="ui embed">
                 <iframe src={videoSrc}></iframe>
             </div>
             <div class="ui segment">
