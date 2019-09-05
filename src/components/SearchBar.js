@@ -7,12 +7,14 @@ export class SearchBar extends Component {
     }
 
     handelOnChange = (e) => {
+        console.log(e.target.value);
         this.setState({
             term: e.target.value
-        });
+        })
     }
 
     onFormSubmit = (e) =>{
+        console.log(this.state.term);
         e.preventDefault();
         this.props.onSubmit(this.state.term);
     }
@@ -23,7 +25,7 @@ export class SearchBar extends Component {
                 <form onSubmit={this.onFormSubmit}>
                     <div className="ui fluid action input">
                         <input type="text" value={this.state.term} onChange={this.handelOnChange} placeholder="Search..." />
-                        <button className="ui icon button" onClick={this.handelOnChange}>
+                        <button className="ui icon button">
                             <i className="search icon"></i>
                         </button>
                     </div>

@@ -2,11 +2,13 @@ import React, { Component } from 'react';
 import SearchBar from './SearchBar';
 import youtube from './Youtube';
 import VideoList from './VideoList';
+import VideoDetails from './VideoDetails';
 
 export class App extends Component {
 
     state = {
-        videos: []
+        videos: [],
+        selectedVideo : null
     }
 
    onSubmit = async term =>{
@@ -15,9 +17,12 @@ export class App extends Component {
                q : term
            }
        });
-       console.log(response.data.items);
        this.setState({videos:response.data.items});
    }
+
+    onVideoSelect = (video) =>{
+        this.setState({selectedVideo:video});
+    }
     
   render() {
     return (
@@ -28,9 +33,11 @@ export class App extends Component {
                     <SearchBar onSubmit={this.onSubmit}/>
                 </div>
             </div>
-            <div className="eight wide column"></div>
             <div className="eight wide column">
-                <VideoList videos={this.state.videos}/>
+                <VideoDetails video={this.state.selectedVideo}/>
+            </div>
+            <div className="eight wide column">
+                <VideoList videos={this.state.videos} onVideoSelect={this.onVideoSelect}/>
             </div>
         </div>
       </div>

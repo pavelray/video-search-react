@@ -4,23 +4,16 @@ import VideoItem from './VideoItem'
 export class VideoList extends Component {
    
     render() {
-        const {videos} = this.props;
+        const {videos, onVideoSelect} = this.props;
         if(videos.length>0){
            const renderList = videos.map((video) =>{
-                return <><VideoItem video={video}/></>
+                return <VideoItem video={video} onVideoSelect={onVideoSelect}/>
             });
 
-        return (
-            <div>
-                {renderList}
-            </div>
-            );
+        return (<div>{renderList}</div>);
         }
         else{
-            return (
-                <div>
-                </div>
-                );
+            return (<div></div>);
         }
     }
 }
