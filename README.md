@@ -5,4 +5,4 @@ This app is hosted in here - [Video Search](https://pavelray.github.io/video-sea
 
 This application is developed using React Js.
 
-![video-search-react](https://raw.githubusercontent.com/pavelray/video-search-react/tree/master/public/App-Image.png)
+![Video-Search](https://raw.githubusercontent.com/pavelray/video-search-react/master/public/App-Image.png)
