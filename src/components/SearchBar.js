@@ -7,14 +7,12 @@ export class SearchBar extends Component {
     }
 
     handelOnChange = (e) => {
-        console.log(e.target.value);
         this.setState({
             term: e.target.value
         })
     }
 
     onFormSubmit = (e) =>{
-        console.log(this.state.term);
         e.preventDefault();
         this.props.onSubmit(this.state.term);
     }

@@ -17,7 +17,10 @@ export class App extends Component {
                q : term
            }
        });
-       this.setState({videos:response.data.items});
+       this.setState({
+           videos:response.data.items,
+           selectedVideo: response.data.items[0]
+        });
    }
 
     onVideoSelect = (video) =>{

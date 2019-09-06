@@ -7,13 +7,13 @@ export class VideoList extends Component {
         const {videos, onVideoSelect} = this.props;
         if(videos.length>0){
            const renderList = videos.map((video) =>{
-                return <VideoItem video={video} onVideoSelect={onVideoSelect}/>
+                return <VideoItem key={video.id.videoId} video={video} onVideoSelect={onVideoSelect}/>
             });
 
-        return (<div>{renderList}</div>);
+        return (<>{renderList}</>);
         }
         else{
-            return (<div></div>);
+            return (<></>);
         }
     }
 }
