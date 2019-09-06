@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.js": "/pavelray/video-search-react/static/js/main.64d444d0.chunk.js",
+    "main.js.map": "/pavelray/video-search-react/static/js/main.64d444d0.chunk.js.map",
+    "runtime~main.js": "/pavelray/video-search-react/static/js/runtime~main.42adf006.js",
+    "runtime~main.js.map": "/pavelray/video-search-react/static/js/runtime~main.42adf006.js.map",
+    "static/js/2.7cab2b60.chunk.js": "/pavelray/video-search-react/static/js/2.7cab2b60.chunk.js",
+    "static/js/2.7cab2b60.chunk.js.map": "/pavelray/video-search-react/static/js/2.7cab2b60.chunk.js.map",
+    "index.html": "/pavelray/video-search-react/index.html",
+    "precache-manifest.fe86585f8d5efd47d2fc9b6990e88329.js": "/pavelray/video-search-react/precache-manifest.fe86585f8d5efd47d2fc9b6990e88329.js",
+    "service-worker.js": "/pavelray/video-search-react/service-worker.js"
+  }
+}
