@@ -33,10 +33,10 @@ export class App extends Component {
                     <SearchBar onSubmit={this.onSubmit}/>
                 </div>
             </div>
-            <div className="eight wide column">
+            <div className="ten wide column">
                 <VideoDetails video={this.state.selectedVideo}/>
             </div>
-            <div className="eight wide column">
+            <div className="six wide column">
                 <VideoList videos={this.state.videos} onVideoSelect={this.onVideoSelect}/>
             </div>
         </div>
